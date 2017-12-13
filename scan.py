@@ -48,9 +48,10 @@ if __name__ == '__main__':
             for device in devices:
                 if device['mac'] not in saved:
                     print('Unkown Device', device)
-                    macs.append(device['mac'])
                 else:
                     print('Found Device', device)
+                
+                macs.append(device['mac'])
             
             count = 0
             for saved_device in saved:
